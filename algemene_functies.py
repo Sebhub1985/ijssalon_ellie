@@ -1,10 +1,8 @@
 def mijn_functie_1(a):
-    uitvoer_lijst[a=10]
+    uitvoer_lijst = [a=10]
     uitvoer_lijst.append(a*a)
     return uitvoer_lijst
- 
- from reclame import mijn_functie_2
- 
+  
  def mijn_functie_2(a,b):
     uitvoer_lijst = [a=12,b=3]
     uitvoer_lijst.append(a+b)
