@@ -1,12 +1,13 @@
 def mijn_functie_1(a):
-    uitvoer_lijst = [a=10]
-    uitvoer_lijst.append(a*a)
-    return uitvoer_lijst
+    return a * a
   
  def mijn_functie_2(a,b):
-    uitvoer_lijst = [a=12,b=3]
+    uitvoer_lijst = []
     uitvoer_lijst.append(a+b)
     uitvoer_lijst.append(a-b)
     uitvoer_lijst.append(a*b)
     uitvoer_lijst.append(a/b)
     return uitvoer_lijst
+
+print(mijn_functie_1(3))
+print(mijn_functie_2(3,2))

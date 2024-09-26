@@ -16,6 +16,8 @@ def inkomsten_totaal(inkomsten,btw):
     uitvoer = f"Het totaal van alle inkomsten van deze week is {totaal} euro, waarover {btw_bedrag} euro btw betaald dient te worden."
     return uitvoer
 
+print(inkomsten_totaal([10,5,3,2,1,2,9], 0.21)
+
 def laag_en_hoog(mijn_lijst):
     uitvoer = [220, 430, 125, 160, 205, 90, 345]
     laagste = min(mijn_lijst)
