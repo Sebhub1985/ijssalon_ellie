@@ -28,4 +28,4 @@ def bereken_totaal(inkomsten_dict):
 
  for item, bedrag in inkomsten_dict.items():
      totaal += bedrag
-    return totaaal
+    return totaal
