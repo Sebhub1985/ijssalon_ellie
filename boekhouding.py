@@ -1,6 +1,6 @@
 import csv
-from helper import *
-from presentatie import *
+from helper import bereken_totaal
+from presentatie import toon_inkomsten
 
 inkomsten = {
     "Aardbeien-ijs-totaal": "1000",
@@ -9,17 +9,12 @@ inkomsten = {
     "Waterijsjes-totaal": "750"
     }
 
-totaal_inkomsten = som()
+totaal_inkomsten = bereken_totaal(inkomsten)
 
-def presenteer(inkomsten,totaal_inkomsten):
-    Aardbeien-ijs-totaal : 1000 euro
-    Vanille-ijs-totaal : 2000 euro
-    Chocolade-ijs-totaal : 1500 euro
-    Waterijsjes-totaal : 750 euro
-    ==========================
-    Totaal : 5250 euro
+toon_inkomsten(inkomsten, totaal_inkomsten)
 
-    with open('boekhouding.csv’, 'w',newline='') as csvfile:
-        for key, value in inkomsten.items():
-        writer = csv.writer(csvfile, delimter=';')
-        writer.writerow([key,value])
+with open('boekhouding.csv', 'w', newline='') as csvfile:
+ writer = csv.writer(csvfile, delimiter=';')
+
+for item, bedrag in inkomsten.items():
+ writer.writerow([item, bedrag])

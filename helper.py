@@ -23,8 +23,9 @@ def ondersteep(tekst=""):
 
 from boekhouding import inkomsten
 
-def som(inkomsten)
-     uitvoer_lijst.append(inkomsten+inkomsten)
-     return uitvoer_lijst
+def bereken_totaal(inkomsten_dict):
+ totaal = 0
 
-print(inkomsten)
+ for item, bedrag in inkomsten_dict.items():
+     totaal += bedrag
+    return totaaal
